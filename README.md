@@ -1,15 +1,15 @@
 # XIOT Internship Task (Embedded System)
 ## Description 
--The system is based on a single AVR Microcontroller.
+- The system is based on a single AVR Microcontroller.
 - c function to control one input and output (IO Pins) the input pin PD2 is a switch as interrupt once it pressed it light the led connected to output pin PB0 & Display the status on an LCD  & Serial Monitor whether the switch is pressed & the led is on or not.
 
--C function controls Temperature sensor to display it's reading through ADC on the LCD with 3 second rate.
+- C function controls Temperature sensor to display it's reading through ADC on the LCD with 3 second rate.
 
 ## **Instructions For Setting the Application** ##
 
--program Development is based on Eclipse c/c++ with AVR plugin and Proteus 8 professional simulator is used for Testing each module itself and the hole system working together.
+- program Development is based on Eclipse c/c++ with AVR plugin and Proteus 8 professional simulator is used for Testing each module itself and the hole system working together.
 
--for System Testing you can run Proteus simulation with XIOT.elf file burned on it and test each single hardware component in simulation mode.
+- for System Testing you can run Proteus simulation with XIOT.elf file burned on it and test each single hardware component in simulation mode.
 
 - for different Proteus Version use FILE -> import legacy project -> choose IXOT.pdsprj.
 
