@@ -5,8 +5,8 @@
 
 -C function controls Temperature sensor to display it's reading through ADC on the LCD with 3 second rate.
 
-## **Instructions For Setting the Application ##
-blugin
+## **Instructions For Setting the Application** ##
+
 -program Development is based on Eclipse c/c++ with AVR plugin and Proteus 8 professional simulator is used for Testing each module itself and the hole system working together.
 
 -for System Testing you can run Proteus simulation with XIOT.elf file burned on it and test each single hardware component in simulation mode.
