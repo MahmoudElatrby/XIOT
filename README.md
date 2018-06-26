@@ -1,7 +1,7 @@
 # XIOT Internship Task (Embedded System)
 ## Description 
 - The system is based on a single AVR Microcontroller.
-- c function to control one input and output (IO Pins) the input pin PD2 is a switch as interrupt once it pressed it light the led connected to output pin PB0 & Display the status on an LCD  & Serial Monitor whether the switch is pressed & the led is on or not.
+- C function to control one input and output (IO Pins) the input pin PD2 is a switch as interrupt once it pressed the led connected to output pin PB0 is on & Display the status on an LCD  & Serial Monitor whether the switch is pressed & the led is on or not.
 
 - C function controls Temperature sensor to display it's reading through ADC on the LCD with 3 second rate.
 
@@ -30,7 +30,7 @@
 
 ### common_macros.h
 
-### lcd.h
+### lcd.h, lcd.c
 - void LCD_sendCommand(uint8 command);
 - void LCD_displayCharacter(uint8 data);
 - void LCD_displayString(const char *Str);
@@ -40,11 +40,11 @@
 - void LCD_goToRowColumn(uint8 row,uint8 col);
 - void LCD_intgerToString(int data);
 
-### adc.h
+### adc.h, adc.c
 - void ADC_init(void);
 - uint16 ADC_read(uint8 channel_num);
 
-### uart.h
+### uart.h, uart.c
 - void UART_init(void);
 - void UART_sendByte(const uint8 data);
 - uint8 UART_recieveByte(void);
@@ -56,11 +56,3 @@
 - ISR(INT0_vect);
 - void stream_temp(void);
 - int main(void);
-
-### lcd.c
-### adc.c
-### uart.c
-
-
-
-
