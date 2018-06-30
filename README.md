@@ -49,10 +49,12 @@
 - void UART_sendByte(const uint8 data);
 - uint8 UART_recieveByte(void);
 - void UART_sendString(const uint8 *Str);
-- void UART_receiveString(uint8 *Str); // Receive until #
+- void UART_receiveString(uint8 *Str);
 
 ### XIOTMain.c
-- void INT0_Init(void);
 - ISR(INT0_vect);
-- void stream_temp(void);
+- ISR(TIMER0_OVF_vect)
 - int main(void);
+- void INT0_Init(void);
+- void timer0_init_normal_mode(void);
+- void stream_temp(void);
